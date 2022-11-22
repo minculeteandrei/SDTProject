@@ -48,11 +48,12 @@ public class NotificationService implements Runnable{
 
                     while (bw.ready())
                         modif = bw.readLine();
-                    Message newMessage = new Message.MessageBuilder(modif).warning("warning");
-                    this.signal(newMessage);
                     bw.close();
 
-//                    System.out.println("file changed: " + fileName);
+                    System.out.println("file changed: " + fileName);
+                    Message newMessage = new Message.MessageBuilder(modif).warning("wzazrznziznzg").error("eyryryoyr").build();
+                    System.out.println("im writing" + newMessage.toString());
+                    this.signal(newMessage);
                 }
 
                 if (!key.reset()) {

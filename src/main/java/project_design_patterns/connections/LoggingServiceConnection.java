@@ -10,10 +10,11 @@ public class LoggingServiceConnection extends Connection{
     @Override
     public void write(Message message) {
         try {
-            FileWriter fw = new FileWriter("src/main/java/project_design_patterns/log.txt", true);
+            FileWriter fw = new FileWriter("src/main/java/project_design_patterns/writes/log.txt", true);
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write(message.toString());
             bw.newLine();
+            bw.flush();
             bw.close();
         } catch (IOException ioe) {
             ioe.printStackTrace();

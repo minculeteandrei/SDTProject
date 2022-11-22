@@ -1,3 +1,0 @@
-Message{data='Logging service connection test 1', warning='null', error='null'}
-Message{data='Logging service connection test', warning='null', error='Test 2'}
-Message{data='Logging service connection test', warning='Test 3', error='Test 3'}
