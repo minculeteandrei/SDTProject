@@ -12,13 +12,11 @@ public class Message {
         this.error = builder.error;
     }
 
-    static class MessageBuilder extends Message{
+    public static class MessageBuilder extends Message{
 
-        public MessageBuilder(String data, String warning, String error) {
+        public MessageBuilder(String data) {
             super();
             this.data = data;
-            this.warning = warning;
-            this.error = error;
         }
 
         public MessageBuilder warning(String warning){
