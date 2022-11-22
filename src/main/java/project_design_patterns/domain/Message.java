@@ -12,6 +12,30 @@ public class Message {
         this.error = builder.error;
     }
 
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getWarning() {
+        return warning;
+    }
+
+    public void setWarning(String warning) {
+        this.warning = warning;
+    }
+
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
+
     public static class MessageBuilder extends Message{
 
         public MessageBuilder(String data) {
